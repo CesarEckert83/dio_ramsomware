@@ -2,14 +2,12 @@ import os
 import pyaes
 
 ## Abrir o arquivo a ser encriptado
-
 file_name = "teste.txt"
 file = open(file_name, "rb")
 file_data = file.read()
 file.close()
 
 ## Remover o arquivo original
-
 os.Remove(file_name)
 
 ## Definir a chave de incrptação
